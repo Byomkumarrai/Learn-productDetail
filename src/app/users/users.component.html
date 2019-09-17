@@ -1,0 +1,5 @@
+<div *ngFor="let user of data">
+    <p [title]="user.name + ' details'" [routerLink]="['/user', user.id]">
+      {{ user.name }}
+    </p>
+</div>
